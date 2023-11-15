@@ -15,9 +15,9 @@ public class Truck {
     @Column(name = "ELECTRIC")
     private boolean electric;
     @OneToOne
-    @JoinColumn(name = "ID_TYPE_OF_TRUCK", referencedColumnName = "ID_TYPE_OF_TRUCK")
+    @JoinColumn(name = "ID_CLIENT", referencedColumnName = "ID_CLIENT")
     private Client client;
     @OneToOne
-    @JoinColumn(name = "ID_CLIENT", referencedColumnName = "ID_CLIENT")
+    @JoinColumn(name = "ID_TYPE_OF_TRUCK", referencedColumnName = "ID_TYPE_OF_TRUCK")
     private TypeOfTruck typeOfTruck;
 }

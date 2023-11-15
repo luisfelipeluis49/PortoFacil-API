@@ -10,6 +10,8 @@ public class Location {
     private long id;
     @Column(name = "ZIPCODE")
     private String zipcode;
+    @Column(name = "CITY")
+    private String city;
     @Column(name = "THOROUGHFARE")
     private String thoroughfare;
     @Column(name = "KM")
